@@ -1,0 +1,20 @@
+{
+	"name": "basic-project-config",
+	"version": "1.0.0",
+	"main": "index.js",
+	"repository": "git@github.com:techmmunity-education/basic-project-config.git",
+	"author": "",
+	"license": "MIT",
+	"devDependencies": {
+		"@techmmunity/eslint-config": "^5.1.3",
+		"@types/node": "^16.11.11",
+		"@vercel/ncc": "^0.33.0",
+		"eslint": "^8.4.0",
+		"prettier": "^2.5.1",
+		"typescript": "^4.5.2"
+	},
+	"scripts": {
+		"build": "ncc build src/index.ts -o dist -s -m",
+		"start": "node dist/index.js"
+	}
+}
